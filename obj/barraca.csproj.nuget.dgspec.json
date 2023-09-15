@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/kinhosz/workspace/barraca/barraca.csproj": {}
+    "/home/kinhosz/workspace/Barraca/barraca.csproj": {}
   },
   "projects": {
-    "/home/kinhosz/workspace/barraca/barraca.csproj": {
+    "/home/kinhosz/workspace/Barraca/barraca.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kinhosz/workspace/barraca/barraca.csproj",
+        "projectUniqueName": "/home/kinhosz/workspace/Barraca/barraca.csproj",
         "projectName": "barraca",
-        "projectPath": "/home/kinhosz/workspace/barraca/barraca.csproj",
+        "projectPath": "/home/kinhosz/workspace/Barraca/barraca.csproj",
         "packagesPath": "/home/kinhosz/.nuget/packages/",
-        "outputPath": "/home/kinhosz/workspace/barraca/obj/",
+        "outputPath": "/home/kinhosz/workspace/Barraca/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/kinhosz/.nuget/NuGet/NuGet.Config"
@@ -42,7 +42,17 @@
               "target": "Package",
               "version": "[7.0.11, )"
             },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.11, )"
             },
@@ -78,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.111/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }

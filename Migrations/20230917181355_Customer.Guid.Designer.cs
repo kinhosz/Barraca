@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace barraca.Migrations
 {
     [DbContext(typeof(BarracaContext))]
-    partial class BarracaContextModelSnapshot : ModelSnapshot
+    [Migration("20230917181355_Customer.Guid")]
+    partial class CustomerGuid
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -59,9 +62,6 @@ namespace barraca.Migrations
                     b.Property<int>("Payment")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("Uuid")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
                     b.ToTable("Orders");
@@ -81,9 +81,6 @@ namespace barraca.Migrations
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<Guid>("Uuid")
-                        .HasColumnType("uniqueidentifier");
 
                     b.Property<double>("Value")
                         .HasColumnType("float");
@@ -106,9 +103,6 @@ namespace barraca.Migrations
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
-
-                    b.Property<Guid>("Uuid")
-                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
